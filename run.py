@@ -26,14 +26,14 @@ class GameBoard:
         self.computer_score = 0  # Track the score for the computer
 
     def get_username(self):
-        input_is_valid = False
+        input_valid = False
         username = ""
-        while input_is_valid is False:
+        while input_valid is False:
             user_input = input("Enter Your username: ")
-            if len(user_is_input) < 4:
+            if len(user_input) < 4:
                     print("Please enter a minimum of 4 characters")
             else:
-                input_is_valid = True
+                input_valid = True
                 username = user_input
         return username
 
