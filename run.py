@@ -155,36 +155,37 @@ class GameBoard:
 {player_name} = {self.player_turns}, Computer = {self.computer_turns}
 Scores: 
 {self.player_score}, Computer = {self.computer_score}""")
-                print("\nGame Over!")
-                print(f"{player_name}' Board:")
-                self.display_board(self.player_board)
-                print("\nComputer's Board:")
-                self.display_board(self.computer_board, is_player=False)
+                
+            print("\nGame Over!")
+            print(f"{player_name}' Board:")
+            self.display_board(self.player_board)
+            print("\nComputer's Board:")
+            self.display_board(self.computer_board, is_player=False)
 
-                if self.player_ships == 0:
-                    print("""\nYou lost! All Your ships have been sunk!""")
-                elif self.computer_ships == 0:
-                    print(f"""Great {player_name}!
-                    All the computer's ships have been sunk!""")
-                else:
-                    print("\nBoth players have ships remaining.")
-                # Display score for player and computer
-                print(f"""\nScores: {player_name} = {self.player_score},
-                Computer: {self.computer_score}""")
+            if self.player_ships == 0:
+                print("""\nYou lost! All Your ships have been sunk!""")
+            elif self.computer_ships == 0:
+                print(f"""Great {player_name}!
+                All the computer's ships have been sunk!""")
+            else:
+                print("\nBoth players have ships remaining.")
+            # Display score for player and computer
+            print(f"""\nScores: 
+{player_name} = {self.player_score}, Computer: {self.computer_score}""")
 
-                while True:
-                    play_again = input("\nPlay another game? (yes/no:) ")
-                    if play_again.lower() in ["yes", "no"]:
-                        break
-                    else:
-                        print("Invalid input. Please type 'yes' or 'no'.")
-
-                if play_again.lower() != "yes":
-                    print(f"Thanks for playing {player_name} We'll be sea-ing You again!")
+            while True:
+                play_again = input("\nPlay another game? (yes/no:) ")
+                if play_again.lower() in ["yes", "no"]:
                     break
                 else:
-                    # Restart the game with a new round
-                    self.restart_game()
+                    print("Invalid input. Please type 'yes' or 'no'.")
+
+            if play_again.lower() != "yes":
+                print(f"Thanks for playing {player_name} We'll be sea-ing You again!")
+                break
+            else:
+                # Restart the game with a new round
+                self.restart_game()
 
     def restart_game(self):
         # Restart the game paramenters for new round
