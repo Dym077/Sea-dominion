@@ -65,7 +65,7 @@ class GameBoard:
         # Execute player's and computer's shot on board and update status
         if board[row][col] == "€":
             print("HIT!")
-            board[row][col] == "X"
+            board[row][col] = "X"
             return True
         else:
             print("MISS!")
