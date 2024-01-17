@@ -74,7 +74,7 @@ class GameBoard:
 
     def display_instructions(self):
         # Show welcome message, game instructions and information to player
-        print("\nWelcome to Sea Dominion\n")
+        print("\nSea Dominion - A battleships game.\n")
         print("Game rules:")
         print("1. This game has two boards, one for each player.")
         print("2. The boards are marked with the numbers 0 - 4.")
@@ -84,7 +84,7 @@ class GameBoard:
         print("6. If You MISS a ship, You will see 'O'.")
         print("7. Your ships are displayed as '€'.")
         print("8. You can type 'exit' to quit the game anytime.")
-        print("\nLet the battle begin!\n")
+        print("\nCommence sea-battle!\n")
 
     def play_game(self):
         # Primary game loop with turns and outcomes
@@ -203,10 +203,3 @@ class GameBoard:
 if __name__ == "__main__":
     game = GameBoard()
     game.play_game()
-
-
-
-
-
-
-

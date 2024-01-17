@@ -30,14 +30,12 @@ The live link is found via this link - [Sea-Dominion]()
 ## Testing
 
 ### PEP8 Testing
-
+The code has been tested with the pep8 validation tool, which currently returns no errors. 
 ### Input Testing
 
 ### Other Game Testing
 
-## Libraries and Technologies Used
-
-### Python Libraries:
+## Technologies Used
 
 
 ### Programs Used
