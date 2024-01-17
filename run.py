@@ -36,7 +36,7 @@ class GameBoard:
             else:
                 input_valid = True
                 username = user_input
-            return username
+        return username
 
     def display_board(self, board, is_player=True):
         # Displays the game board with player and computer boards.
@@ -196,6 +196,9 @@ class GameBoard:
         ]
         self.player_turns = 20
         self.computer_turns = 20
+        self.player_ships = 3
+        self.player_score = 0  # Player's score is reset
+        self.computer_score = 0  # Computer's score is reset
         self.player_turns = 3
         self.computer_turns = 3
 
