@@ -45,7 +45,7 @@ class GameBoard:
             if not is_player:
                 # Is it the computer's board, the ships will be hidden
                 row = [" " if cell == "€" else cell for cell in row]
-                print(f"{i} |{'|'.join(row)}|")
+            print(f"{i} |{'|'.join(row)}|")
 
     def place_ships(self, board, ships):
         # Places ships on board randomly, ensuring no overlaps.
