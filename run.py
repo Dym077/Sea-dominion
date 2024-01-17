@@ -179,7 +179,7 @@ class GameBoard:
                         print("Invalid input. Please type 'yes' or 'no'.")
 
                 if play_again.lower() != "yes":
-                    print(f"Thanks for playing {player_name}
+                    print(f"Thanks for playing {player_name} 
                           We'll be sea-ing You again!")
                     break
                 else:
