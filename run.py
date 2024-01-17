@@ -138,8 +138,7 @@ class GameBoard:
                     while True:
                         computer_row = random.randint(0, self.board_size - 1)
                         computer_col = random.randint(0, self.board_size - 1)
-                        if (computer_row, computer_col)
-                        in computer_guessed_coordinates:
+                        if (computer_row, computer_col) in computer_guessed_coordinates:
                             continue
                         computer_guessed_coordinates.add(
                             (computer_row, computer_col))
