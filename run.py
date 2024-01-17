@@ -55,7 +55,7 @@ class GameBoard:
             while board[row][col] == "€":
                 row = random.randint(0, self.board_size - 1)
                 col = random.randint(0, self.board_size - 1)
-            board[row][col] == "€"
+            board[row][col] = "€"
 
     def validate_input(self, row, col):
         # Validates the input coordinates
