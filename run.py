@@ -175,7 +175,7 @@ Scores:
 {player_name} = {self.player_score}, Computer: {self.computer_score}""")
 
             while True:
-                play_again = input("\nPlay another game? (yes/no:) ")
+                play_again = input("\nPlay another game? (yes/no): ")
                 if play_again.lower() in ["yes", "no"]:
                     break
                 else:
@@ -201,10 +201,9 @@ Scores:
         self.player_turns = 20
         self.computer_turns = 20
         self.player_ships = 3
+        self.computer_ships = 3
         self.player_score = 0  # Player's score is reset
         self.computer_score = 0  # Computer's score is reset
-        self.player_turns = 3
-        self.computer_turns = 3
 
 
 if __name__ == "__main__":
