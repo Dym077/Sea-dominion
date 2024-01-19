@@ -166,7 +166,7 @@ Scores:
             if self.player_ships == 0:
                 print("""\nYou lost! All Your ships have been sunk!""")
             elif self.computer_ships == 0:
-                print(f"""Great {player_name}!
+                print(f"""\nGreat {player_name}!
                 All the computer's ships have been sunk!""")
             else:
                 print("\nBoth players have ships remaining.")
