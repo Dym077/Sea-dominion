@@ -152,10 +152,10 @@ class GameBoard:
 
                 self.player_turns -= 1
                 self.computer_turns -= 1
-                print(f"""\nTurns left :
+                print(f"""\nTurns left:
 {player_name} = {self.player_turns}, Computer = {self.computer_turns}
 Scores:
-{self.player_score}, Computer = {self.computer_score}""")
+{player_name} = {self.player_score}, Computer = {self.computer_score}""")
 
             print("\nGame Over!")
             print(f"{player_name}'s Board:")
