@@ -58,6 +58,7 @@ The code has been tested with the pep8 validation tool, which currently returns 
 
 ## Known Bugs
 - The game says "You lost! All Your ships have been sunk", after only three attempts.
+- Sometimes when the playre types a number, the game will throw an error 'Interesting, but You should enter a number.'
 
 
 ## Fixed Bugs
