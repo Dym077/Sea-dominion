@@ -133,7 +133,7 @@ class GameBoard:
                     break
 
                 # Computer's turn
-                print("\nComputer's board:\n")
+                print("\nComputer's board:")
                 self.display_board(self.computer_board, is_player=False)
                 while True:
                     computer_row = random.randint(0, self.board_size - 1)
