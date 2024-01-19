@@ -146,6 +146,7 @@ class GameBoard:
                     (self.player_board, computer_row, computer_col)
                     if computer_hit:
                         self.player_ships -= 1
+                        self.computer_score += 1
                         # Computer's score gets updated
                     break
 
