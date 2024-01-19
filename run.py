@@ -31,7 +31,7 @@ class GameBoard:
         while input_valid is False:
             user_input = input("Enter Your username: ")
             if len(user_input) < 4:
-                    print("Please enter a minimum of 4 characters")
+                print("Please enter a minimum of 4 characters")
             else:
                 input_valid = True
                 username = user_input
