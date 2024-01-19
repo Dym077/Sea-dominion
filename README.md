@@ -10,7 +10,7 @@
 ## How to Play
 ### Gameplay
 - When first opening the game the player will be presented with a menu, which explains the rules. The player will also be asked to enter a username, which has to be at least 4 characters long.
-After entering the username, the player will be greeted with the applied username and a line will declare: Commence battle!
+After entering the username, the player will be greeted with the applied username and a line will declare: Begin sea battle!
 - On the Gameboard, the player can see the ships, marked as "€". The purpose f the game is to find and sink all the computer's ships before the computer does the same with the player's ships. Having 20 attempts, the player must guess the position of the computer's ships by entering numbers representing horizontal and verical rows on the Gameboard.
 When the player guesses a row on the board, the game will either say "HIT!" or "MISS!", depending on the outcome of the guess. A hit will display an "X", while a miss will display an "O". The player will then be informed how many attempts are left.
 ### Game over

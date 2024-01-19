@@ -83,7 +83,7 @@ class GameBoard:
         print("6. If You MISS a ship, You will see 'O'.")
         print("7. Your ships are displayed as '€'.")
         print("8. You can type 'exit' to quit the game anytime.")
-        print("\nCommence sea-battle!\n")
+        print("\nBegin sea-battle!\n")
 
     def play_game(self):
         # Primary game loop with turns and outcomes
@@ -157,7 +157,7 @@ Scores:
 {self.player_score}, Computer = {self.computer_score}""")
 
             print("\nGame Over!")
-            print(f"{player_name}' Board:")
+            print(f"{player_name}'s Board:")
             self.display_board(self.player_board)
             print("\nComputer's Board:")
             self.display_board(self.computer_board, is_player=False)
