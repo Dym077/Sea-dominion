@@ -129,7 +129,7 @@ class GameBoard:
                             print(error_m)
                             continue
                         player_guess.add((row, col))
-                        player_hit = self.make_shot(self.computer_board, row, col)
+                        player_hit = self.make_shot(self.computer_board, row, col, player_name)
 
                         if player_hit:
                             self.computer_ships -= 1
