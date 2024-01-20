@@ -12,7 +12,7 @@
 - When first opening the game the player will be presented with a menu, which explains the rules. The player will also be asked to enter a username, which has to be at least 4 characters long.
 After entering the username, the player will be greeted with the applied username and a line will declare: Begin sea battle!
 - On the Gameboard, the player can see the ships, marked as "€". The purpose f the game is to find and sink all the computer's ships before the computer does the same with the player's ships. Having 20 attempts, the player must guess the position of the computer's ships by entering numbers representing horizontal and verical rows on the Gameboard.
-When the player guesses a row on the board, the game will either say "HIT!" or "MISS!", depending on the outcome of the guess. A hit will display an "X", while a miss will display an "O". The player will then be informed how many attempts are left.
+When the player guesses a row on the board, the game will either say "(Username) HITS!" or "(Username) MISSES!", depending on the outcome of the guess. A hit will display an "X", while a miss will display an "O". The player will then be informed how many attempts are left.
 ### Game over
 - If the player manages to sink all the computer's ships the game will declare: "You won! All the computers ships have been sunk." If it's the other way around and the computer sinks the player's ships, the game will instead declare "You lost! All Your ships have been sunk." The player will then have the option to either quit the game or start a new game.
 - Sometimes the game will result in a draw when all 20 attempts have been used. The game will then declare "Both players have ships remaining." The player will then have the option to either quit the game or start a new game.
@@ -78,6 +78,7 @@ https://www.youtube.com/watch?v=MgJBgnsDcF0&t=1145s (This video tutorial n how t
 - Pep8 (Used to check the code for syntax errors, indentation errors and warnings)
 - TinyPNG (Used to compress images for this README file)
 - Lucidchart (Used to create the flowchart image)
+- Diffchecker (Used to compare old code with updated code)
 
 #### Desktop resources
 VS Code (Used to write code locally and make a local safe copy of the code on the computer)

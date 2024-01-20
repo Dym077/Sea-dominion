@@ -60,14 +60,14 @@ class GameBoard:
         # Validates the input coordinates
         return 0 <= row < self.board_size and 0 <= col < self.board_size
 
-    def make_shot(self, board, row, col):
+    def make_shot(self, board, row, col, player):
         # Execute player's and computer's shot on board and update status
         if board[row][col] == "€":
-            print("HIT!")
+            print(f"\n{player} HITS!")
             board[row][col] = "X"
             return True
         else:
-            print("MISS!")
+            print(f"\n{player}MISS!")
             board[row][col] = "O"
             return False
 
@@ -94,8 +94,8 @@ class GameBoard:
             self.place_ships(self.player_board, self.player_ships)
             self.place_ships(self.computer_board, self.computer_ships)
 
-            player_guessed_coordinates = set()
-            computer_guessed_coordinates = set()
+            player_guess = set()
+            computer_guess = set()
 
             while (
                 self.player_turns > 0
@@ -121,7 +121,10 @@ class GameBoard:
                         if not self.validate_input(row, col):
                             print("Coordinates are invalid! Please try again!")
                             continue
-                        player_guessed_coordinates.add((row, col))
+                        if (row, col) in player_guess:
+                            print(error_m)
+                            continue
+                        player_guess.add((row, col))
                         player_hit = self.make_shot(self.computer_board, row, col)
                         if player_hit:
                             self.computer_ships -= 1
@@ -131,19 +134,15 @@ class GameBoard:
                         print("Interesting, but You should enter a number!")
                 if row_input.lower() == "exit":
                     break
-
-                # Computer's turn
-                print("\nComputer's board:")
-                self.display_board(self.computer_board, is_player=False)
                 while True:
                     computer_row = random.randint(0, self.board_size - 1)
                     computer_col = random.randint(0, self.board_size - 1)
-                    if (computer_row, computer_col) in computer_guessed_coordinates:
+                    if (computer_row, computer_col) in computer_guess:
                         continue
-                    computer_guessed_coordinates.add(
+                    computer_guess.add(
                         (computer_row, computer_col))
                     computer_hit = self.make_shot
-                    (self.player_board, computer_row, computer_col)
+                    (self.player_board, computer_row, computer_col, 'Computer')
                     if computer_hit:
                         self.player_ships -= 1
                         self.computer_score += 1
@@ -182,7 +181,7 @@ Scores:
                     print("Invalid input. Please type 'yes' or 'no'.")
 
             if play_again.lower() != "yes":
-                print(f"Thanks for playing {player_name}. We'll be sea-ing You again!")
+                print(f"Thanks for playing {player_name}! We'll be sea-ing You again.")
                 break
             else:
                 # Restart the game with a new round
