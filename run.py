@@ -67,7 +67,7 @@ class GameBoard:
             board[row][col] = "X"
             return True
         else:
-            print(f"\n{player}MISSES!")
+            print(f"\n{player} MISSES!")
             board[row][col] = "O"
             return False
 
