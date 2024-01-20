@@ -67,7 +67,7 @@ class GameBoard:
             board[row][col] = "X"
             return True
         else:
-            print(f"\n{player}MISS!")
+            print(f"\n{player}MISSES!")
             board[row][col] = "O"
             return False
 
@@ -107,6 +107,10 @@ class GameBoard:
                 print(f"\n{player_name}'s board:")
                 self.display_board(self.player_board)
 
+                # Display computer's board
+                print("\nComputer's board: ")
+                self.display_board(self.computer_board, False)
+
                 while True:
                     error_m = "This coordinate is already tried. Please try again!"
                     message = "Enter row (0-4) or quit game by typing 'exit':"
@@ -126,6 +130,7 @@ class GameBoard:
                             continue
                         player_guess.add((row, col))
                         player_hit = self.make_shot(self.computer_board, row, col)
+
                         if player_hit:
                             self.computer_ships -= 1
                             self.player_score += 1  # Player's score is updated
