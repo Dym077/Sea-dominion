@@ -18,9 +18,28 @@ When the player guesses a row on the board, the game will either say "{player}" 
 - Sometimes the game will result in a draw when all 20 attempts have been used. The game will then declare "Both players have ships remaining." The player will then have the option to either quit the game or start a new game.
 
 ## Site Owner Goals
--
+- To provide an easy-to-play, accessible game with rules that are easy to comprehend.
+- That the player feels inspired to play the game by strategically guess the coordinates of the computer's ships.
+- The player should feel that the game is challenging enough, but not too hard to play.
+- The player should also feel that the game is an interactive experience.
+- As a returning player, one should feel that one can upskill while learning the strategies of the game.
 
 ## User Stories
+### First time user
+- As a first time user, the player should be comfortable with the rules and terms of the game and should easily be able to start playing immediately.
+- A first time user will also feel the interactivity of the game and access the game board easily.
+- To a first time user, the game should be challenging without being confusing.
+
+### Returning user
+- A returning user should have no problem getting back into the rules of the game.
+- A returning user can use and develop the strategies to more easily locate and sink the computer's ships.
+- A returnign user should also be comfortable with playing multiple times to try to beat the computer.
+
+### Frequent user
+- The frequent user will develop the skills to beat the computer in a battleships game.
+- The frequent user can enjoy the accessibility of the game's layout.
+- As a frequent user You should also enjoy the challenge of the game's randomness. No round of the game will be exactly the same.
+
 
 
 
