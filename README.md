@@ -56,7 +56,9 @@ When the player guesses a row on the board, the game will either say "{player}" 
 ## Features
 - When entering the site, the player will be greeted with a very basic text-based menu which explains the rules of the game. The player will be askesd to enter a username. The validation of the user input is strong - if the player enters anything but a four letter username, the game will throw an error message.
 - After entering the username, the player will be presented with the game boards, with the player's board at the top and the computer's board at the bottom of the screen. The player's three ships will be visible as "€" on the board, while the computer's ships are hidden.
-- The player will also be asked to guess the coordinates of the computer's ships. The player guesses these coordinates by typing numbers for each row and column on the board, e.g. "Enter row (0-4) : 2, Enter column(0-4) : 1". Also here, the validation of the user inout is strong - if the player enters a word, a letter or a blank space instead of a number, the game will alert the player with "Interesting, but You should enter a number".
+- The player will also be asked to guess the coordinates of the computer's ships. The player guesses these coordinates by typing numbers for each row and column on the board, e.g. "Enter row (0-4) : 2, Enter column(0-4) : 1". Also here, the validation of the user input is strong - if the player enters a word, a letter or a blank space instead of a number, the game will alert the player with "Interesting, but You should enter a number".
+- The scores are updated instantly after each turn:
+![Scores](images/turns-scores.png)
 
 
 
@@ -66,6 +68,26 @@ When the player guesses a row on the board, the game will either say "{player}" 
 ### PEP8 Testing
 The code has been tested with the pep8 validation tool, which currently returns no errors.
 ### Input Testing
+- The input validation has been tested to check that the rules for the correct input works properly.
+- When the player is asked to type the username the screen should read:
+![Enter username](images/enter-username.png)
+- When done correctly, the screen will display this:
+![Game boards](images/boards.png)
+- When done incorrectly, the game will throw this error message:
+![Invalid username](images/invalid-username.png)
+- If the player enters anything but a number in the rows/columns- section under the board, the game adequately alerts the player with this message:
+![Enter a number](images/interesting-but.png)
+- When the player guesses a row and column right, the game correctly declares that it is a hit
+The scores and turns that are left are also updated instantly:
+![HIT](images/player-hits.png)
+-If the player guesses a row and column wrong, the game adequately declares that it is a miss
+The scores and turns that are left are also updated instantly:
+![MISS](images/player-misses.png)
+- When the game is over, the player will be asked "Play another game?". If the player types anything other than "yes" or "no", the game will throw this message correctly:
+![Invalid](images/invalid-input.png)
+
+
+
 
 ### Other Game Testing
 - Responsinator (http://www.responsinator.com/?url=https%3A%2F%2Fsea-dominion-cb02afeb3150.herokuapp.com%2F)
@@ -84,8 +106,6 @@ The code has been tested with the pep8 validation tool, which currently returns 
 
 ## Known Bugs
 - The game says "You lost! All Your ships have been sunk", after only three attempts.
-- Sometimes when the playre types a number, the game will throw an error 'Interesting, but You should enter a number.'
-
 
 ## Fixed Bugs
 
