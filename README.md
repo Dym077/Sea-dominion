@@ -90,10 +90,18 @@ The scores and turns that are left are also updated instantly:
 
 
 ### Other Game Testing
-- Responsinator (http://www.responsinator.com/?url=https%3A%2F%2Fsea-dominion-cb02afeb3150.herokuapp.com%2F)
-- Am I responsive (https://ui.dev/amiresponsive?url=https://sea-dominion-cb02afeb3150.herokuapp.com/)
+- [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fsea-dominion-cb02afeb3150.herokuapp.com%2F)
+- [Am I responsive](https://ui.dev/amiresponsive?url=https://sea-dominion-cb02afeb3150.herokuapp.com/)
 ## Technologies Used
 - Python3
+### Libraries used
+- [Random](https://docs.python.org/3/library/random.html?highlight=random#module-random)
+### Platforms used
+- [Heroku](https://www.heroku.com/)
+
+## Data model
+- This game uses a class named Gameboard. This class represents the overall logic flow of the game and represents the entire board.
+
 
 
 ### Programs Used
@@ -111,11 +119,12 @@ The scores and turns that are left are also updated instantly:
 
 
 ## Deployment
+-
 
 ## Credits
-https://github.com/SaraabbasiNZ/battleship-game-python/blob/main/run.py (This project was a great help for me to understand how the code logic works and how to operate the functions inside it.)
-https://www.youtube.com/watch?v=MgJBgnsDcF0&t=1145s (This video tutorial n how to build a battleships game very interesting and provided a lot of info on the subject. Even though it is 'internediate', and maybe too advanced for me at the moment, it certainly gave inspiration for future projects.)
-https://github.com/AliOKeeffe/word-Py(A great basic project for python based games which was very helpful for my project as well.)
+- ![Battleship game Python](https://github.com/SaraabbasiNZ/battleship-game-python/blob/main/run.py) This project was a great help for me to understand how the code logic works and how to operate the functions inside it.
+- ![Python Intermediate Project Assignment](https://www.youtube.com/watch?v=MgJBgnsDcF0&t=1145s) This video tutorial n how to build a battleships game very interesting and provided a lot of info on the subject. Even though it is 'intermediate', and maybe too advanced for me at the moment, it certainly gave inspiration for future projects.
+- ![word-Py](https://github.com/AliOKeeffe/word-Py) A great basic project for python based games which was very helpful for my project as well.
 
 ### Resources Used
 #### Online Resources
@@ -128,7 +137,7 @@ https://github.com/AliOKeeffe/word-Py(A great basic project for python based gam
 - Diffchecker (Used to compare old code with updated code)
 
 #### Desktop resources
-VS Code (Used to write code locally and make a local safe copy of the code on the computer)
+- VS Code (Used to write code locally and make a local safe copy of the code on the computer)
 
 ## Acknowledgments
 - All the kind people in the Slack community which have provided alot of help during the development of this project.
