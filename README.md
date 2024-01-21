@@ -50,7 +50,13 @@ When the player guesses a row on the board, the game will either say "{player}" 
 
 ![Flow Chart](images/sea-dominion-flowchart.png)
 
+## Design
+- This game is based purely on python code and therefor it is totally text-driven. There are no graphic elements in the game - it runs in a terminal only.
+
 ## Features
+- When entering the site, the player will be greeted with a very basic text-based menu which explains the rules of the game. The player will be askesd to enter a username. The validation of the user input is strong - if the player enters anything but a four letter username, the game will throw an error message.
+- After entering the username, the player will be presented with the game boards, with the player's board at the top and the computer's board at the bottom of the screen. The player's three ships will be visible as "€" on the board, while the computer's ships are hidden.
+- The player will also be asked to guess the coordinates of the computer's ships. The player guesses these coordinates by typing numbers for each row and column on the board, e.g. "Enter row (0-4) : 2, Enter column(0-4) : 1". Also here, the validation of the user inout is strong - if the player enters a word, a letter or a blank space instead of a number, the game will alert the player with "Interesting, but You should enter a number".
 
 
 
@@ -89,6 +95,7 @@ The code has been tested with the pep8 validation tool, which currently returns 
 ## Credits
 https://github.com/SaraabbasiNZ/battleship-game-python/blob/main/run.py (This project was a great help for me to understand how the code logic works and how to operate the functions inside it.)
 https://www.youtube.com/watch?v=MgJBgnsDcF0&t=1145s (This video tutorial n how to build a battleships game very interesting and provided a lot of info on the subject. Even though it is 'internediate', and maybe too advanced for me at the moment, it certainly gave inspiration for future projects.)
+https://github.com/AliOKeeffe/word-Py(A great basic project for python based games which was very helpful for my project as well.)
 
 ### Resources Used
 #### Online Resources
