@@ -66,7 +66,7 @@ When the player guesses a row on the board, the game will either say "{player}" 
 ## Testing
 
 ### PEP8 Testing
-- The code has been tested with the pep8 validation tool, which currently returns these error/ warnings:
+- The code has been tested with the [Pep8 Online](https://pep8ci.herokuapp.com/#) validation tool, which currently returns these error/ warnings:
 
 Results:
 - 117: E303 too many blank lines (2)
@@ -77,6 +77,7 @@ Results:
 - 194: E501 line too long (87 > 79 characters)
 - 220: W292 no newline at end of file
 * After correcting these errors, though, Gitpod will complain about them and the terminal will throw errors instead. The game works properly despite the errors that pep8 warns about.
+
 ### Input Testing
 - The input validation has been tested to check that the rules for the correct input works properly.
 - When the player is asked to type the username the screen should read:
@@ -111,30 +112,32 @@ The scores and turns that are left are also updated instantly:
 
 ## Data model
 - This game uses a class named Gameboard. This class represents the overall logic flow of the game and represents the entire board.
-
-
-
 ### Programs Used
 - Github
 - Gitpod
 - Heroku
 - PEP8
 - VS Code
-
-
 ## Known Bugs
 - No current bugs known.
-
 ## Fixed Bugs
 - Game declares Game Over after only 3 attempts, and throws message "You lost! All Your ships have been sunk".
 - Game updates computer's score after player's attempts, leading to the Game Over situation.
 ## Deployment
-- This project was deployed using Heroku.
+* This project was deployed using Heroku.
+- This is how to create the Heroku app:
+- Log in to Heroku or create a new account.
+- When on the main page, click the button called New in the top right corner and from the drop-down menu select "Create New App".
+- Type in the name of the app, which must be unique to work.
+- Select your region.
+- Click the Create App button.
+- Click the Settings Tab - scroll down to Config Vars.
+- Click Reveal Config Vars and enter PORT into the Key box and 8000 into the Value box and click the Add button.
 
 ## Credits
-- ![Battleship game Python](https://github.com/SaraabbasiNZ/battleship-game-python/blob/main/run.py) This project was a great help for me to understand how the code logic works and how to operate the functions inside it.
-- ![Python Intermediate Project Assignment](https://www.youtube.com/watch?v=MgJBgnsDcF0&t=1145s) This video tutorial n how to build a battleships game very interesting and provided a lot of info on the subject. Even though it is 'intermediate', and maybe too advanced for me at the moment, it certainly gave inspiration for future projects.
-- ![word-Py](https://github.com/AliOKeeffe/word-Py) A great basic project for python based games which was very helpful for my project as well.
+- [Battleship game Python](https://github.com/SaraabbasiNZ/battleship-game-python/blob/main/run.py) This project was a great help for me to understand how the code logic works and how to operate the functions inside it.
+- [Python Intermediate Project Assignment](https://www.youtube.com/watch?v=MgJBgnsDcF0&t=1145s) This video tutorial n how to build a battleships game very interesting and provided a lot of info on the subject. Even though it is 'intermediate', and maybe too advanced for me at the moment, it certainly gave inspiration for future projects.
+- [word-Py](https://github.com/AliOKeeffe/word-Py) A great basic project for python based games which was very helpful for my project as well.
 
 ### Resources Used
 #### Online Resources
