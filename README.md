@@ -66,7 +66,17 @@ When the player guesses a row on the board, the game will either say "{player}" 
 ## Testing
 
 ### PEP8 Testing
-The code has been tested with the pep8 validation tool, which currently returns no errors.
+- The code has been tested with the pep8 validation tool, which currently returns these error/ warnings:
+
+Results:
+- 117: E303 too many blank lines (2)
+- 125: E231 missing whitespace after ','
+- 125: E501 line too long (95 > 79 characters)
+- 159: E111 indentation is not a multiple of 4
+- 159: E117 over-indented
+- 194: E501 line too long (87 > 79 characters)
+- 220: W292 no newline at end of file
+* After correcting these errors, though, Gitpod will complain about them and the terminal will throw errors instead. The game works properly despite the errors that pep8 warns about.
 ### Input Testing
 - The input validation has been tested to check that the rules for the correct input works properly.
 - When the player is asked to type the username the screen should read:
@@ -113,13 +123,13 @@ The scores and turns that are left are also updated instantly:
 
 
 ## Known Bugs
-- The game says "You lost! All Your ships have been sunk", after only three attempts.
+- No current bugs known.
 
 ## Fixed Bugs
-
-
+- Game declares Game Over after only 3 attempts, and throws message "You lost! All Your ships have been sunk".
+- Game updates computer's score after player's attempts, leading to the Game Over situation.
 ## Deployment
--
+- This project was deployed using Heroku.
 
 ## Credits
 - ![Battleship game Python](https://github.com/SaraabbasiNZ/battleship-game-python/blob/main/run.py) This project was a great help for me to understand how the code logic works and how to operate the functions inside it.
@@ -141,4 +151,4 @@ The scores and turns that are left are also updated instantly:
 
 ## Acknowledgments
 - All the kind people in the Slack community which have provided alot of help during the development of this project.
-- My mentor Antonio for his useful tips and recommendations.
+- My mentor Antonio for all the help, useful tips and recommendations.
