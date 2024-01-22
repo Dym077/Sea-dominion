@@ -1,4 +1,5 @@
 # Sea-Dominion
+![Sea Dominion](images/amiresponsive.png)
 
 - Sea Dominion is a python-based battleships game which allows the player to battle against the computer in a classical battleships style. The player and the computer are both provided with a board on which the ships are randomly placed. The player will get 20 attempts to sink the computer's ships by guessing the position of the ships. The game is based both on luck and strategy, as the player has to guess the position of the computer's ships at first, while later being able to strategically pin down their position.
 
@@ -8,11 +9,13 @@
 ![Site Mockup](images/site-mockup.jpg)
 
 ## How to Play
+
 ### Gameplay
 - When first opening the game the player will be presented with a menu, which explains the rules. The player will also be asked to enter a username, which has to be at least 4 characters long.
 After entering the username, the player will be greeted with the applied username and a line will declare: Begin sea battle!
 - On the Gameboard, the player can see the ships, marked as "€". The purpose f the game is to find and sink all the computer's ships before the computer does the same with the player's ships. Having 20 attempts, the player must guess the position of the computer's ships by entering numbers representing horizontal and verical rows on the Gameboard.
 When the player guesses a row on the board, the game will either say "{player}" HITS!" or "{player} MISSES!", depending on the outcome of the guess. A hit will display an "X", while a miss will display an "O". The player will then be informed how many attempts are left.
+
 ### Game over
 - If the player manages to sink all the computer's ships the game will declare: "You won! All the computers ships have been sunk." If it's the other way around and the computer sinks the player's ships, the game will instead declare "You lost! All Your ships have been sunk." The player will then have the option to either quit the game or start a new game.
 - Sometimes the game will result in a draw when all 20 attempts have been used. The game will then declare "Both players have ships remaining." The player will then have the option to either quit the game or start a new game.
@@ -25,6 +28,7 @@ When the player guesses a row on the board, the game will either say "{player}" 
 - As a returning player, one should feel that one can upskill while learning the strategies of the game.
 
 ## User Stories
+
 ### First time user
 - As a first time user, the player should be comfortable with the rules and terms of the game and should easily be able to start playing immediately.
 - A first time user will also feel the interactivity of the game and access the game board easily.
@@ -39,9 +43,6 @@ When the player guesses a row on the board, the game will either say "{player}" 
 - The frequent user will develop the skills to beat the computer in a battleships game.
 - The frequent user can enjoy the accessibility of the game's layout.
 - As a frequent user You should also enjoy the challenge of the game's randomness. No round of the game will be exactly the same.
-
-
-
 
 ## Flow charts
 ![Flow Chart ](images/sea-dominion-first-flowchart.jpg)
@@ -59,9 +60,6 @@ When the player guesses a row on the board, the game will either say "{player}" 
 - The player will also be asked to guess the coordinates of the computer's ships. The player guesses these coordinates by typing numbers for each row and column on the board, e.g. "Enter row (0-4) : 2, Enter column(0-4) : 1". Also here, the validation of the user input is strong - if the player enters a word, a letter or a blank space instead of a number, the game will alert the player with "Interesting, but You should enter a number".
 - The scores are updated instantly after each turn:
 ![Scores](images/turns-scores.png)
-
-
-
 
 ## Testing
 
@@ -103,26 +101,33 @@ The scores and turns that are left are also updated instantly:
 ### Other Game Testing
 - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fsea-dominion-cb02afeb3150.herokuapp.com%2F)
 - [Am I responsive](https://ui.dev/amiresponsive?url=https://sea-dominion-cb02afeb3150.herokuapp.com/)
+
 ## Technologies Used
 - Python3
+
 ### Libraries used
 - [Random](https://docs.python.org/3/library/random.html?highlight=random#module-random)
+
 ### Platforms used
 - [Heroku](https://www.heroku.com/)
 
 ## Data model
 - This game uses a class named Gameboard. This class represents the overall logic flow of the game and represents the entire board.
+
 ### Programs Used
 - Github
 - Gitpod
 - Heroku
 - PEP8
 - VS Code
+
 ## Known Bugs
 - No current bugs known.
+
 ## Fixed Bugs
 - Game declares Game Over after only 3 attempts, and throws message "You lost! All Your ships have been sunk".
 - Game updates computer's score after player's attempts, leading to the Game Over situation.
+
 ## Deployment
 * This project was deployed using Heroku.
 - This is how to create the Heroku app:
@@ -140,6 +145,7 @@ The scores and turns that are left are also updated instantly:
 - [word-Py](https://github.com/AliOKeeffe/word-Py) A great basic project for python based games which was very helpful for my project as well.
 
 ### Resources Used
+
 #### Online Resources
 - Youtube (Used to find tutorials and inpiration on the subject)
 - W3CSchools (Used to find tips and information about python code)
