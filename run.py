@@ -112,7 +112,8 @@ class GameBoard:
                 self.display_board(self.computer_board, False)
 
                 while True:
-                    error_m = "This coordinate is already tried. Please try again!"
+                    error_m = "This coordinate is already tried.
+                    Please try again!"
                     message = "Enter row (0-4) or quit game by typing 'exit':"
                     row_input = input(message)
                     if row_input.lower() == "exit":
@@ -129,8 +130,8 @@ class GameBoard:
                             print(error_m)
                             continue
                         player_guess.add((row, col))
-                        player_hit = self.make_shot(self.computer_board, row, col, player_name)
-
+                        player_hit = self.make_shot(self.computer_board,
+                                                    row, col, player_name)
                         if player_hit:
                             self.computer_ships -= 1
                             self.player_score += 1  # Player's score is updated
@@ -187,7 +188,8 @@ Scores:
                     print("Invalid input. Please type 'yes' or 'no'.")
 
             if play_again.lower() != "yes":
-                print(f"Thanks for playing {player_name}! We'll be sea-ing You again.")
+                print(f"Thanks for playing {player_name}!
+                      We'll be sea-ing You again.")
                 break
             else:
                 # Restart the game with a new round
