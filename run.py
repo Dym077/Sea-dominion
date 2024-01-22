@@ -112,8 +112,7 @@ class GameBoard:
                 self.display_board(self.computer_board, False)
 
                 while True:
-                    error_m = "This coordinate is already tried.
-                    Please try again!"
+                    error_m = "This coordinate is already tried. Please try again!"
                     message = "Enter row (0-4) or quit game by typing 'exit':"
                     row_input = input(message)
                     if row_input.lower() == "exit":
