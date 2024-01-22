@@ -85,6 +85,49 @@ class GameBoard:
         print("8. You can type 'exit' to quit the game anytime.")
         print("\nBegin sea-battle!\n")
 
+    def user_play(self, player_guess, player_name):
+        error_m = "This coordinate is already tried. Please try again!"
+        message = "Enter row (0-4) or quit game by typing 'exit':"
+        while True:
+            row_input = input(message)
+            if row_input.lower() == "exit":
+                break
+            col_input = input("Enter column (0-4): ")
+            try:
+                row = int(row_input)
+                col = int(col_input)
+                if not self.validate_input(row, col):
+                    print("Coordinates are invalid! Please try again!")
+                    continue
+                if (row, col) in player_guess:
+                    print(error_m)
+                    continue
+                player_guess.add((row, col))
+                player_hit = self.make_shot(self.computer_board,
+                                            row, col, player_name)
+                if player_hit:
+                    self.computer_ships -= 1
+                    self.player_score += 1  # Player's score is updated
+                break
+            except ValueError:
+                print("Interesting, but You should enter a number!")
+        return row_input.lower()
+
+
+    def computer_play(self, computer_guess):
+        while True:
+            computer_row = random.randint(0, self.board_size - 1)
+            computer_col = random.randint(0, self.board_size - 1)
+            if (computer_row, computer_col) not in computer_guess:
+                break
+        computer_guess.add(
+            (computer_row, computer_col))
+        computer_hit = self.make_shot(self.player_board, computer_row,computer_col, 'Computer')
+        if computer_hit is True:
+            self.player_ships -= 1
+            self.computer_score += 1
+            # Computer's score gets updated
+
     def play_game(self):
         # Primary game loop with turns and outcomes
         while True:
@@ -111,49 +154,10 @@ class GameBoard:
                 print("\nComputer's board: ")
                 self.display_board(self.computer_board, False)
 
-                while True:
-                    error_m = "This coordinate is already tried. Please try again!"
-                    message = "Enter row (0-4) or quit game by typing 'exit':"
-                    row_input = input(message)
-                    if row_input.lower() == "exit":
-                        break
-
-                    col_input = input("Enter column (0-4): ")
-                    try:
-                        row = int(row_input)
-                        col = int(col_input)
-                        if not self.validate_input(row, col):
-                            print("Coordinates are invalid! Please try again!")
-                            continue
-                        if (row, col) in player_guess:
-                            print(error_m)
-                            continue
-                        player_guess.add((row, col))
-                        player_hit = self.make_shot(self.computer_board,
-                                                    row, col, player_name)
-                        if player_hit:
-                            self.computer_ships -= 1
-                            self.player_score += 1  # Player's score is updated
-                        break
-                    except ValueError:
-                        print("Interesting, but You should enter a number!")
-                if row_input.lower() == "exit":
-                    break
-                while True:
-                    computer_row = random.randint(0, self.board_size - 1)
-                    computer_col = random.randint(0, self.board_size - 1)
-                    if (computer_row, computer_col) in computer_guess:
-                        continue
-                    computer_guess.add(
-                        (computer_row, computer_col))
-                    computer_hit = self.make_shot
-                    (self.player_board, computer_row, computer_col, 'Computer')
-                    if computer_hit:
-                        self.player_ships -= 1
-                        self.computer_score += 1
-                        # Computer's score gets updated
-                    break
-
+                user_choice = self.user_play(player_guess, player_name)
+                if user_choice == "exit":
+                     break
+                self.computer_play(computer_guess)
                 self.player_turns -= 1
                 self.computer_turns -= 1
                 print(f"""\nTurns left:
