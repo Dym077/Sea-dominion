@@ -78,6 +78,7 @@ Results:
 
 ### Input Testing
 - The input validation has been tested to check that the rules for the correct input works properly.
+Thorough playthrough with several input variations have been executed to ensure that the input validation works according to the flowchart.
 - When the player is asked to type the username the screen should read:
 ![Enter username](images/enter-username.png)
 - When done correctly, the screen will display this:
@@ -89,18 +90,18 @@ Results:
 - When the player guesses a row and column right, the game correctly declares that it is a hit
 The scores and turns that are left are also updated instantly:
 ![HIT](images/player-hits.png)
--If the player guesses a row and column wrong, the game adequately declares that it is a miss
+- If the player guesses a row and column wrong, the game adequately declares that it is a miss
 The scores and turns that are left are also updated instantly:
 ![MISS](images/player-misses.png)
 - When the game is over, the player will be asked "Play another game?". If the player types anything other than "yes" or "no", the game will throw this message correctly:
 ![Invalid](images/invalid-input.png)
-
-
-
+- If the player types "yes", the games starts over gain with all values reset and two new boards. If the player types "no" instead, the game will thank the player and end with a little pun. This is also tested and works correctly.
+![Thank You](images/thanks-for-playing.png)
 
 ### Other Game Testing
 - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fsea-dominion-cb02afeb3150.herokuapp.com%2F)
 - [Am I responsive](https://ui.dev/amiresponsive?url=https://sea-dominion-cb02afeb3150.herokuapp.com/)
+*These two sites are used to check if a web based app is responsive on all devices, ranging from mobile phones to desktop computers.
 
 ## Technologies Used
 - Python3
