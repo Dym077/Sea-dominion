@@ -100,7 +100,10 @@ The scores and turns that are left are also updated instantly:
 ![MISS](images/player-misses.png)
 - When the game is over, the player will be asked "Play another game?". If the player types anything other than "yes" or "no", the game will throw this message correctly:
 ![Invalid](images/invalid-input.png)
-- If the player types "yes", the games starts over gain with all values reset and two new boards. If the player types "no" instead, the game will thank the player and end with a little pun. This is also tested and works correctly.
+- If the player types "yes", the games starts over gain with all values reset and two new boards.
+- If the player should type a number greater than 4, the game accurately throws this message:
+![Invalid Coordinates](images/invalid-coordinates.png)
+If the player types "no" instead, the game will thank the player and end with a little pun. This is also tested and works correctly.
 ![Thank You](images/thanks-for-playing.png)
 
 ### Other Game Testing
