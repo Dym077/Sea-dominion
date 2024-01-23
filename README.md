@@ -11,7 +11,7 @@
 ## How to Play
 
 ### Gameplay
-- When first opening the game the player will be presented with a menu, which explains the rules. The player will also be asked to enter a username, which has to be at least 4 characters long.
+- When first opening the game the player will be presented with a menu, which explains the rules. The player will also be asked to enter a username, which has to be at least 4 characters long. It doesn't matter if the player uses lower or uppercase letters - the game will accept both.
 After entering the username, the player will be greeted with the applied username and a line will declare: Begin sea battle!
 - On the Gameboard, the player can see the ships, marked as "€". The purpose f the game is to find and sink all the computer's ships before the computer does the same with the player's ships. Having 20 attempts, the player must guess the position of the computer's ships by entering numbers representing horizontal and verical rows on the Gameboard.
 When the player guesses a row on the board, the game will either say "{player}" HITS!" or "{player} MISSES!", depending on the outcome of the guess. A hit will display an "X", while a miss will display an "O". The player will then be informed how many attempts are left.
@@ -19,6 +19,9 @@ When the player guesses a row on the board, the game will either say "{player}" 
 ### Game over
 - If the player manages to sink all the computer's ships the game will declare: "You won! All the computers ships have been sunk." If it's the other way around and the computer sinks the player's ships, the game will instead declare "You lost! All Your ships have been sunk." The player will then have the option to either quit the game or start a new game.
 - Sometimes the game will result in a draw when all 20 attempts have been used. The game will then declare "Both players have ships remaining." The player will then have the option to either quit the game or start a new game.
+
+### Exit game
+- The player can choose to exit at any point during the game. when typing "exit", the game will declare that both player have ships remaining and the scores will be displayed. The player will then receive the question "Play another game? (yes/no): The player can choose either, and exactly as above in the 'Enter username' section, both lower and uppercase letters are accepted.
 
 ## Site Owner Goals
 - To provide an easy-to-play, accessible game with rules that are easy to comprehend.
@@ -103,7 +106,7 @@ The scores and turns that are left are also updated instantly:
 ### Other Game Testing
 - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fsea-dominion-cb02afeb3150.herokuapp.com%2F)
 - [Am I responsive](https://ui.dev/amiresponsive?url=https://sea-dominion-cb02afeb3150.herokuapp.com/)
-*These two sites are used to check if a web based app is responsive on all devices, ranging from mobile phones to desktop computers.
+*These two sites are used to check if a web based app is responsive on all devices, ranging from mobile phones to desktop computers. All virtual representations of these devices work properly with this app.
 
 ## Technologies Used
 - Python3
