@@ -45,14 +45,15 @@ When the player guesses a row on the board, the game will either say "{player}" 
 - As a frequent user You should also enjoy the challenge of the game's randomness. No round of the game will be exactly the same.
 
 ## Flow charts
+When planning the logic flow of this game, I first started with pen and paper to get an idea of how the program should work.
 ![Flow Chart ](images/sea-dominion-first-flowchart.jpg)
 
-- This was the first flowchart which later was replaced with the current one below.
+- This was the first flowchart which later was replaced with the current one below. This one was created with Lucidchart snd provided a better overview of the flow of functions in the game. Even though it is a better presentation of how the game works, it doesn't cover the exact flow, as some of the functions were designed later. For example, the draw situationwith the declaration of "Both players have ships remaining", is not represented in the flowchart.
 
 ![Flow Chart](images/sea-dominion-flowchart.png)
 
 ## Design
-- This game is based purely on python code and therefor it is totally text-driven. There are no graphic elements in the game - it runs in a terminal only.
+- This game is based purely on python code and therefor it is totally text-driven. There are no graphic elements in the game - it runs in a terminal only. The plyer is prompted to use only the keyboard to execute the gameplay.
 
 ## Features
 - When entering the site, the player will be greeted with a very basic text-based menu which explains the rules of the game. The player will be askesd to enter a username. The validation of the user input is strong - if the player enters anything but a four letter username, the game will throw an error message.
@@ -121,6 +122,13 @@ The scores and turns that are left are also updated instantly:
 - Heroku
 - PEP8
 - VS Code
+
+## Features left to implement.
+- The option for the player to choose the size of the gameboard, with more rows and columns would be suitable for an updated version of this game.
+-An option to place ships with different sizes on the board, offering the challenge of sinking the ships by hitting them more than once. For example if a ship is placed on row/ col [0,0] and [0,1] it would require the player to hit both coordinates to sink that ship.
+- The option to welcome the player with a menu consisting of text-based art, provided by [ASCII Art](https://www.asciiart.eu/art-and-design/borders#google_vignette), looking something like this:
+![welcomeascii](images/welcome.png)
+
 
 ## Known Bugs
 - No current bugs known.
