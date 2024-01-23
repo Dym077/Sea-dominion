@@ -111,6 +111,9 @@ If the player types "no" instead, the game will thank the player and end with a 
 - [Am I responsive](https://ui.dev/amiresponsive?url=https://sea-dominion-cb02afeb3150.herokuapp.com/)
 *These two sites are used to check if a web based app is responsive on all devices, ranging from mobile phones to desktop computers. All virtual representations of these devices work properly with this app.
 
+### Browser testing
+- The game has ben tested with Google Chrome, Microsoft Edge and Mozilla Firefox. The game runs properly in all three browsers.
+
 ## Technologies Used
 - Python3
 
