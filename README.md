@@ -68,6 +68,7 @@ When planning the logic flow of this game, I first started with pen and paper to
 - The code has been tested with the [Pep8 Online](https://pep8ci.herokuapp.com/#) validation tool, which currently returns these error/ warnings:
 
 Results:
+- 113: E501 line too long (86 > 79)
 - 117: E303 too many blank lines (2)
 - 125: E231 missing whitespace after ','
 - 125: E501 line too long (95 > 79 characters)
@@ -168,5 +169,5 @@ The scores and turns that are left are also updated instantly:
 - VS Code (Used to write code locally and make a local safe copy of the code on the computer)
 
 ## Acknowledgments
-- All the kind people in the Slack community which have provided alot of help during the development of this project.
+- All the kind people in the Slack community which have provided alot of help and encouragement during the development of this project.
 - My mentor Antonio for all the help, useful tips and recommendations.
