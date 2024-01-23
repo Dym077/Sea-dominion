@@ -110,7 +110,7 @@ class GameBoard:
                     self.player_score += 1  # Player's score is updated
                 break
             except ValueError:
-                print("Interesting, but You should enter a number!")
+                print("Interesting, but You should enter a number in both row & col!")
         return row_input.lower()
 
 
